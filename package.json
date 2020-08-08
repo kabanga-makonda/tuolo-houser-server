@@ -1,0 +1,52 @@
+{
+  "name": "tuolohouse-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "engines": {
+    "node": "14.7.0"
+  },
+  "author": "Kabanga Makonda",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/body-parser": "^1.19.0",
+    "@types/compression": "^1.7.0",
+    "@types/cookie-parser": "^1.4.2",
+    "@types/dotenv": "^8.2.0",
+    "@types/express": "^4.17.7",
+    "@types/google__maps": "^0.5.13",
+    "@types/graphql": "^14.5.0",
+    "@types/lodash.merge": "^4.6.6",
+    "@types/mongodb": "^3.5.25",
+    "@types/node": "^14.0.27",
+    "@types/stripe": "^7.13.24",
+    "@typescript-eslint/eslint-plugin": "^3.8.0",
+    "@typescript-eslint/parser": "^3.8.0",
+    "dotenv": "^8.2.0",
+    "eslint": "^7.6.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "nodemon": "^2.0.4",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.7"
+  },
+  "dependencies": {
+    "@google/maps": "^1.1.3",
+    "apollo-server-express": "^2.16.1",
+    "body-parser": "^1.19.0",
+    "cloudinary": "^1.22.0",
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.5",
+    "express": "^4.17.1",
+    "googleapis": "^58.0.0",
+    "graphql": "^15.3.0",
+    "lodash.merge": "^4.6.2",
+    "mongodb": "^3.6.0",
+    "stripe": "^8.83.0"
+  },
+  "scripts": {
+    "start": "nodemon src/index.ts",
+    "seed": "ts-node tmp/seed.ts",
+    "clear": "ts-node tmp/clear.ts",
+    "build": "tsc -p ./"
+  }
+}
